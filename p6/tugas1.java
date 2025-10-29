@@ -1,4 +1,4 @@
-package pertemuan6;
+package p6;
 
 import java.awt.BorderLayout;
 import javax.swing.JButton;
@@ -10,7 +10,7 @@ public class tugas1 {
         SwingUtilities.invokeLater(new Runnable() {
            public void run() {
             JFrame frame = new JFrame();
-            frame.setTitle("Tugas 1 Komponen Gui Dasar");
+            frame.setTitle("Tugas 1: Komponen Gui Dasar");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(400, 200);
             JButton center = new JButton("Center");
@@ -19,21 +19,21 @@ public class tugas1 {
             JButton east = new JButton("East");
             JLabel label = new JLabel("Label");
             center.addActionListener(e -> {
-                label.setText("Tombol Center di Klik!");
+                label.setText("Tombol Center diKlik!");
             });
             
             west.addActionListener(e -> {
-                if (label.getText().equals("Tombol West di Klik!")) {
+                if (label.getText().equals("Tombol West diKlik!")) {
                     label.setText("Label");
                 } else {
-                label.setText("Tombol West di Klik!");
+                label.setText("Tombol West diKlik!");
                 }
             });
             south.addActionListener(e -> {
-                label.setText("Tombol South di Klik!");
+                label.setText("Tombol South diKlik!");
             });
             east.addActionListener(e -> {
-                label.setText("Tombol East di Klik!");
+                label.setText("Tombol East diKlik!");
             });
             frame.setLayout(new BorderLayout());
             frame.add(label,BorderLayout.NORTH);
