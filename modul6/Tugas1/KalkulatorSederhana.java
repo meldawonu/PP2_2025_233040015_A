@@ -1,21 +1,16 @@
 package modul6.Tugas1;
-
 import javax.swing.*;
 import java.awt.*;
-
 public class KalkulatorSederhana {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Kalkulator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400,300);
         frame.setLayout(new BorderLayout(10, 10));
-
         JTextField field = new JTextField();
         frame.add(field,BorderLayout.NORTH);
-
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4,4,5,5));
-
         panel.add(new JButton("7"));
         panel.add(new JButton("8"));
         panel.add(new JButton("9"));
@@ -32,11 +27,7 @@ public class KalkulatorSederhana {
         panel.add(new JButton("0"));
         panel.add(new JButton("."));
         panel.add(new JButton("="));
-
-
-
         frame.add(panel,BorderLayout.CENTER);
-
         frame.setVisible(true);
     }
 }
