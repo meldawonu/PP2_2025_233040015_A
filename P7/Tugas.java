@@ -117,7 +117,6 @@ public class Tugas extends JFrame {
                 }
             }
         });
-
         return panel;
     }
 
